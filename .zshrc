@@ -22,7 +22,8 @@ alias raspi="ssh rpi@100.92.81.11"
 alias kratoes="ssh kratoes@100.84.180.3"
 alias hypr="ssh hyprkratoes@100.84.180.3"
 alias showrc="tail -n 30 ~/.zshrc"
-alias code-on="ssh -f -N -L 8385:localhost:8385 kratoes@100.84.180.3"
+alias code-kratoes="ssh -f -N -L 8385:localhost:8385 kratoes@100.84.180.3"
+alias code-hypr="ssh -f -N -L 2582:localhost:2582 hyprkratoes@100.84.180.3"
 
 ####################### Ease of use #####################
 alias rcedit='nano ~/.zshrc && refsh && clear'
