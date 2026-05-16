@@ -19,7 +19,8 @@ alias refsh="source ~/.zshrc"
 alias update="sudo apt update -y && sudo apt upgrade -y"
 alias get="sudo apt install -y"
 alias raspi="ssh rpi@100.92.81.11"
-alias kompyuter="ssh kratoes@100.84.180.3"
+alias kratoes="ssh kratoes@100.84.180.3"
+alias hypr="ssh hyprkratoes@100.84.180.3"
 alias showrc="tail -n 30 ~/.zshrc"
 alias code-on="ssh -f -N -L 8385:localhost:8385 kratoes@100.84.180.3"
 
@@ -34,7 +35,7 @@ alias bootlogs='cat ~/logs/*.txt'
 alias cronlog='sudo tail -f /var/log/syslog | grep CRON'
 alias showrc='tail -n 50 ~/.zshrc'
 ############## Exports ###############################
-source ~/env/bin/activate
+# source ~/env/bin/activate
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

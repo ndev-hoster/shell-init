@@ -17,5 +17,7 @@ python3 -m venv env
 # The Oh My Zsh installer creates a .zshrc, so we back it up before replacing.
 cp ~/.zshrc ~/zshrc.bak
 cp .zshrc ~/.zshrc
-chsh -s zsh
+if [ "$SHELL" != "$(which zsh)" ]; then
+    chsh -s $(which zsh)
+fi
 exit
